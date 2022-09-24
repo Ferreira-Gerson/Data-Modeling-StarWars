@@ -82,7 +82,7 @@ class Starships(Base):
     passangers = Column(Integer)
     cargo_capacity = Column(Integer)
     consumables = Column(String(250))
-    hyperdrive_rating = Column(String(250))
+    hyperdrive_rating = Column(Float)
     MGLT = Column(Integer)
     starship_class = Column(String(250))
     user_id = Column(Integer, ForeignKey('user.id'))
